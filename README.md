@@ -10,8 +10,47 @@ NanoRefineR provides two main functionalities:
 
 
 ## Processing
+The processing panel allows users to batch process multiple hyperspectral cubes from a specified folder using the following selectable operations:
+
+1. Spatial Downscaling
+Reprojects and resamples the input cube to a user-defined coordinate reference system (CRS) and spatial resolution.
+
+Useful for reducing data volume or aligning datasets to a common projection.
+
+2. Spectral Binning
+Aggregates spectral bands into bins of user-defined width (in nanometers).
+
+This is done by averaging reflectance values across bands falling into each bin.
+
+Binned bands are renamed using the bin center wavelength to preserve spectral traceability.
+
+3. Savitzky-Golay Smoothing
+Applies a Savitzky-Golay filter along the spectral dimension to reduce noise while preserving the shape of spectral features.
+
+User can define the polynomial order and filter length (must be odd).
+
+All processing steps are optional and can be enabled/disabled via checkboxes. Output files are saved in GeoTIFF format with a custom suffix, allowing easy distinction from the original input files.
+
+Batch processing is parallelized using doParallel for faster execution across multiple CPU cores.
 
 ## Visualization
+The visualization panel provides real-time inspection of processed results:
+
+File Selector: Choose any processed output to visualize.
+
+RGB Plot Controls: Dynamically select red, green, and blue wavelengths for generating RGB composites. The closest matching band is automatically selected.
+
+Interactive RGB Display: View side-by-side RGB composites of the input and processed files.
+
+Spectral Explorer: Click on any pixel in either image to view its spectral profile.
+
+Both input and output spectra for the selected location are shown in parallel.
+
+Useful for identifying how processing steps have altered the spectral signature.
+
+This layout is designed for intuitive quality control and to help identify the most effective postprocessing settings for noisy hyperspectral data.
+
+
 
 
 
