@@ -6,7 +6,7 @@ library(plotly)
 
 # === UI ===
 ui <- fluidPage(
-  titlePanel("NanoRefineR: A toolbox for dealing with noisy Nano-Hyperspec imagery"),
+  titlePanel("NanoRefineR: A Shiny app for post-processing and visualizing Nano-Hyperspec HSI data cubes"),
   
   tags$head(
     tags$style(HTML(".boxed-section {
