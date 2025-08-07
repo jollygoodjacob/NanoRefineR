@@ -6,7 +6,7 @@ NanoRefineR provides two main functionalities:
 - a post-processing component that allows for spatial downsampling, spectral binning, and Savitzky-Golay smoothing of input datasets
 - a visualizer with control over band combinations and the ability to click on areas of an image and see the spectra. 
 
-![](imgs/img.png)
+<img src="https://github.com/jollygoodjacob/NanoRefineR/raw/master/imgs/img.png" style="width:100%; border:1px solid #ccc;"/>
 
 
 ## Processing
@@ -40,6 +40,7 @@ The visualization panel provides real-time inspection of processed results:
 Both input and output spectra for the selected location are shown in parallel.
 
 This layout is designed for intuitive quality control and to help identify the most effective postprocessing settings for noisy hyperspectral data.
+
 
 
 
