@@ -29,17 +29,18 @@ Batch processing is parallelized using `doParallel` for faster execution across 
 ## Visualization
 The visualization panel provides real-time inspection of processed results:
 
-**File Selector**: Choose any processed output to visualize.
+- **File Selector**: Choose any processed output to visualize.
 
-**RGB Plot Controls**: Dynamically select red, green, and blue wavelengths for generating RGB composites. The closest matching band is automatically selected.
+- **RGB Plot Controls**: Dynamically select red, green, and blue wavelengths for generating RGB composites. The closest matching band is automatically selected.
 
-**Interactive RGB Display**: View side-by-side RGB composites of the input and processed files.
+- **Interactive RGB Display**: View side-by-side RGB composites of the input and processed files.
 
-**Spectral Explorer**: Click on any pixel in either image to view its spectral profile.
+- **Spectral Explorer**: Click on any pixel in either image to view its spectral profile.
 
 Both input and output spectra for the selected location are shown in parallel.
 
 This layout is designed for intuitive quality control and to help identify the most effective postprocessing settings for noisy hyperspectral data.
+
 
 
 
