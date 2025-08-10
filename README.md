@@ -1,6 +1,6 @@
 # NanoRefineR: A Shiny app for postprocessing and visualizing noisy Nano-Hyperspec HSI data cubes
 
-NanoRefineR is a small project I developed to enable users to apply certain postprocessing techniques to noisy Headwall Nano-Hyperspec HSI cubes and visualize the spectral differences in real time. This tool allows users to rapidly determine which post-processing corrections they may want to make to HSI cubes and can also be used to post-process data in batch.
+NanoRefineR is a small project I developed to enable users to apply certain postprocessing techniques to noisy Headwall Nano-Hyperspec HSI cubes (and potentially other .ENVI formatted HSI products) and visualize the spectral differences in real time. This tool allows users to rapidly determine which post-processing corrections they may want to make to HSI cubes and can also be used to post-process data in batch. 
 
 NanoRefineR provides two main functionalities:
 - a post-processing component that allows for spatial downsampling, spectral binning, and Savitzky-Golay smoothing of input datasets
@@ -37,9 +37,8 @@ The visualization panel provides real-time inspection of processed results:
 
 - **Spectral Explorer**: Click on any pixel in either image to view its spectral profile.
 
-Both input and output spectra for the selected location are shown in parallel.
-
 This layout is designed for intuitive quality control and to help identify the most effective postprocessing settings for noisy hyperspectral data.
+
 
 
 
